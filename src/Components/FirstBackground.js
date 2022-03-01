@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Circle } from "./Circle";
 import { Line } from "./Line";
 
-export const FirstBackground = () => {
+export const FirstBackground = (props) => {
   let array = [];
   const info = [
     80, //size
@@ -516,7 +516,6 @@ export const FirstBackground = () => {
           return div;
         })}
       </div>
-      <div className="place-holder"></div>
     </>
   );
 };

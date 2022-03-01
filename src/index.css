@@ -3,6 +3,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  -ms-overflow-style: none; /* IE, Edge 対応 */
+  scrollbar-width: none; /* Firefox 対応 */
 }
 body::-webkit-scrollbar {
   /* Chrome, Safari 対応 */

@@ -1,11 +1,16 @@
 import "./App.css";
 import React, { useState } from "react";
-import { Circle } from "./Components/Circle";
-import { Line } from "./Components/Line";
 import { FirstBackground } from "./Components/FirstBackground";
 
 const App = () => {
-  return <FirstBackground />;
+  return (
+    <>
+      <div className="container">
+        <FirstBackground />
+      </div>
+      <div className="place-holder"></div>
+    </>
+  );
 };
 
 export default App;
