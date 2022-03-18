@@ -11,7 +11,7 @@ export const Line = styled.div`
   height: ${(props) => props.size}px;
   left: ${(props) => props.x}px;
   top: ${(props) => props.y}px;
-  background: black;
+  background: #111111;
   position: absolute;
   z-index: 0;
   transform-origin: center bottom;
@@ -20,7 +20,7 @@ export const Line = styled.div`
     content: "";
     width: 20px;
     height: 110%;
-    background: white;
+    background: #f0f0f0;
     display: block;
     transform: translate(-5px, -2px);
     animation: ${stretch} ${(props) => props.time}ms ${(props) => props.delay}ms

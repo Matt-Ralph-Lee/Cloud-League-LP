@@ -19,7 +19,7 @@ const OuterCircle = styled.div`
   animation: ${expand} ${(props) => props.time}ms ${(props) => props.delay}ms
     ease-in-out forwards;
   border-radius: 50%;
-  background: black;
+  background: #111111;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,7 +33,7 @@ const WhiteCircle = styled.div`
   width: 75%;
   height: 75%;
   border-radius: 50%;
-  background: white;
+  background: #f0f0f0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +43,7 @@ const InnerCircle = styled.div`
   width: 75%;
   height: 75%;
   border-radius: 50%;
-  background: black;
+  background: #111111;
 `;
 
 export const Circle = (props) => {

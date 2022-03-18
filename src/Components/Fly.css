@@ -1,0 +1,48 @@
+.flyPage {
+  width: 100vw;
+  height: 100vh;
+  font-size: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #111111;
+}
+
+.fly {
+  width: 2.3em;
+  font-size: 25em;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Montserrat", sans-serif;
+  color: transparent;
+  background-clip: text;
+  background-size: cover;
+  background-image: url(../image/mr-blue-sky.jpeg);
+  animation: flySlide 0.3s ease-in-out forwards;
+}
+
+.F {
+  letter-spacing: 0.1em;
+}
+
+.fly-circle {
+  width: 0.5em;
+  height: 0.5em;
+  color: transparent;
+  border-radius: 50%;
+}
+
+.piriod {
+  font-style: normal;
+}
+
+@keyframes flySlide {
+  0% {
+    transform: translateX(0.8em);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
