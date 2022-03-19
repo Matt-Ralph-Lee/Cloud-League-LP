@@ -1,0 +1,95 @@
+.concept-page {
+  width: 100%;
+  height: 100vh;
+  font-size: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+}
+
+.concept-title {
+  width: 11em;
+  height: 11em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111111;
+  color: #ffffff;
+  letter-spacing: 0.3em;
+  font-size: 1.2em;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 4em;
+}
+
+.concept {
+  margin: 0 3em;
+}
+
+.concept > div {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: bold;
+  margin: 0.4em 0;
+}
+
+.concept-first-line,
+.concept-fifth-line {
+  font-size: 2em;
+  letter-spacing: 0.1em;
+}
+
+.concept-google {
+  letter-spacing: 0;
+  margin-right: 0.2em;
+}
+
+.concept-second-line,
+.concept-third-line,
+.concept-forth-line {
+  font-size: 3.5em;
+  letter-spacing: 0.12em;
+  color: rgb(0, 244, 200);
+  background: rgb(0, 244, 200);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 244, 200, 1) 0%,
+    rgba(19, 129, 231, 1) 100%
+  ); /* 背景色にグラデーションを指定 */
+  background-clip: text; /*テキストでくり抜く*/
+  -webkit-text-fill-color: transparent; /*くり抜いた部分は背景を表示*/
+}
+
+.concept-title {
+  opacity: 0;
+  animation: fadeIn 800ms ease-in forwards;
+}
+
+.concept-first-line {
+  opacity: 0;
+  animation: fadeIn 800ms 600ms ease-in forwards;
+}
+.concept-second-line {
+  opacity: 0;
+  animation: fadeIn 800ms 900ms ease-in forwards;
+}
+.concept-third-line {
+  opacity: 0;
+  animation: fadeIn 800ms 1200ms ease-in forwards;
+}
+.concept-forth-line {
+  opacity: 0;
+  animation: fadeIn 800ms 1500ms ease-in forwards;
+}
+.concept-fifth-line {
+  opacity: 0;
+  animation: fadeIn 800ms 1700ms ease-in forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

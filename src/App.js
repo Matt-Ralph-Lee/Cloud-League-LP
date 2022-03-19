@@ -4,6 +4,7 @@ import { FirstBackground } from "./Components/FirstBackground";
 import { useInView } from "react-intersection-observer";
 import { Fly } from "./Components/Fly";
 import { Logo } from "./Components/Logo";
+import { Concept } from "./Components/Concept";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <div className="wrapper">
         <Logo />
         <Fly />
+        <Concept />
       </div>
     </>
   );
