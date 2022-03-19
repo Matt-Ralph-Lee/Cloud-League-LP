@@ -482,6 +482,8 @@ export const FirstBackground = (props) => {
     );
   }
 
+  let timeArray = [];
+
   function main(infoArray, x, y, timeSum) {
     let circleSize = infoArray[0];
     let timeCircle = Math.floor(Math.random() * 3) * 100 + 50;
@@ -498,20 +500,37 @@ export const FirstBackground = (props) => {
       let angle = lineInfo[1];
 
       let timeLine = Math.floor(Math.random() * 3) * 100 + 50;
-      createLine(length, angle, x, y, timeLine, timeSum + timeLine);
+      timeSum += timeLine;
+      createLine(length, angle, x, y, timeLine, timeSum);
 
       let newX = x + length * Math.sin((angle * Math.PI) / 180);
       let newY = y - length * Math.cos((angle * Math.PI) / 180);
 
-      main(child, newX, newY, timeSum + timeLine);
+      main(child, newX, newY, timeSum);
     }
+    timeArray.push(timeSum);
   }
 
   main(info, cx, cy, 0);
+  const finalTime = Math.max(...timeArray);
+
+  const style = {
+    animation: `scale 1s ${finalTime + 500}ms ease-in-out forwards`,
+  };
 
   return (
     <>
-      <div className="stage">
+      <style>
+        {`@keyframes scale{
+          0% {
+            transform: scale(1);
+          }
+          100% {
+            transform: scale(50);
+          }
+        }`}
+      </style>
+      <div className="stage" style={style}>
         {array.map((div) => {
           return div;
         })}
