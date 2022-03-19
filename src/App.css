@@ -11,21 +11,14 @@
   left: 0;
 }
 
+.wrapper {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .place-holder {
   width: 100vw;
   height: 400vh;
-}
-
-.square {
-  width: 10%;
-  height: 100vh;
-  background: crimson;
-  border: solid 1px blue;
-  position: relative;
-  z-index: 0;
-}
-
-.flySwitch {
-  width: 100%;
-  height: 1px;
 }
