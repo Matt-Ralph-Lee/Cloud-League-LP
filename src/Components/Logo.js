@@ -38,9 +38,9 @@ export const Logo = () => {
   };
   return (
     <>
-      <div className="logo-page" ref={ref}>
+      <div className="logo-page">
         <img src={LogoImage} alt="" className="logo-image" style={style} />
-        <div className="logo" style={style}>
+        <div className="logo" style={style} ref={ref}>
           <div className="google">GOOGLE</div>
           <div className="developer">DEVELOPER</div>
           <div className="student-clubs">
