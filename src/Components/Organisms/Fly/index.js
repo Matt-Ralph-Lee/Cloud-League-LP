@@ -1,4 +1,4 @@
-import "./Fly.css";
+import "./style.css";
 import React, { useEffect, useRef, useState } from "react";
 
 export const Fly = () => {

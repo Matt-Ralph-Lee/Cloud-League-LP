@@ -1,7 +1,7 @@
-import "./FirstBackground.css";
+import "./style.css";
 import React, { useState } from "react";
-import { Circle } from "./Circle";
-import { Line } from "./Line";
+import { Circle } from "./Atoms/Circle/Circle";
+import { Line } from "./Atoms/Line/Line";
 
 export const FirstBackground = (props) => {
   let array = [];
