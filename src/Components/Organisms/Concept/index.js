@@ -1,4 +1,4 @@
-import "./Concept.css";
+import "./style.css";
 import React, { useEffect, useRef, useState } from "react";
 import { useInView } from "react-intersection-observer";
 

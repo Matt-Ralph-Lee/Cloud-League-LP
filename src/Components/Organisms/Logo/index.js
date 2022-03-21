@@ -1,6 +1,6 @@
-import "./Logo.css";
+import "./style.css";
 import React, { useEffect, useRef, useState } from "react";
-import LogoImage from "../image/cloud-league-logo-white.png";
+import LogoImage from "../../../Resources/image/cloud-league-logo-white.png";
 
 export const Logo = () => {
   const [offset, setOffset] = useState(0);

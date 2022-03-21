@@ -1,24 +1,16 @@
 import "./App.css";
-import React, { useEffect, useState } from "react";
-import { FirstBackground } from "./Components/FirstBackground";
-import { useInView } from "react-intersection-observer";
-import { Fly } from "./Components/Fly";
-import { Logo } from "./Components/Logo";
-import { Concept } from "./Components/Concept";
+import React from "react";
+import { Fly } from "./Components/Organisms/Fly";
+import { Logo } from "./Components/Organisms/Logo";
+import { Concept } from "./Components/Organisms/Concept";
 
 const App = () => {
   return (
-    <>
-      {/* <div className="container">
-        <FirstBackground />
-      </div>
-      <div className="place-holder"></div> */}
-      <div className="wrapper">
-        <Logo />
-        <Fly />
-        <Concept />
-      </div>
-    </>
+    <div className="wrapper">
+      <Logo />
+      <Fly />
+      <Concept />
+    </div>
   );
 };
 
