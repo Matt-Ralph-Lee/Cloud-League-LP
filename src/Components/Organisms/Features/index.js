@@ -3,25 +3,50 @@ import React, { useEffect, useRef, useState } from "react";
 import CrossImage from "../../../Resources/image/Union.png";
 
 export const Features = () => {
-  const el = useRef(null);
+  const elOne = useRef(null);
+  const elTwo = useRef(null);
+  const elThree = useRef(null);
   const options = {
-    threshold: 0.8,
+    threshold: 0.4,
+    triggerOnce: true,
   };
   useEffect(() => {
-    const observer = new IntersectionObserver(showElements, options);
+    const observerOne = new IntersectionObserver(showOne, options);
+    const observerTwo = new IntersectionObserver(showTwo, options);
+    const observerThree = new IntersectionObserver(showThree, options);
 
-    observer.observe(el.current);
-    function showElements(entry) {
-      if (entry.isIntersecting) {
-        console.log(el.current);
-      }
+    observerOne.observe(elOne.current);
+    observerTwo.observe(elTwo.current);
+    observerThree.observe(elThree.current);
+
+    function showOne(entries) {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          elOne.current.style.animation = "slideInLeft 0.6s ease-out forwards";
+        }
+      });
+    }
+    function showTwo(entries) {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          elTwo.current.style.animation = "slideInRight 0.6s ease-out forwards";
+        }
+      });
+    }
+    function showThree(entries) {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          elThree.current.style.animation =
+            "slideInLeft 0.6s ease-out forwards";
+        }
+      });
     }
   }, []);
   return (
     <>
       <div className="features-page">
         <div className="features-title">FEATURES</div>
-        <div className="feature-one" ref={el}>
+        <div className="feature-one" ref={elOne}>
           <div className="feature-number">01.</div>
           <div className="feature-title">Hybrid Development</div>
           <div className="feature-content">
@@ -40,7 +65,7 @@ export const Features = () => {
             </div>
           </div>
         </div>
-        <div className="feature-two">
+        <div className="feature-two" ref={elTwo}>
           <div className="feature-number">02.</div>
           <div className="feature-title">Touch the Cutting Edge</div>
           <div className="feature-content">
@@ -73,7 +98,7 @@ export const Features = () => {
             </div>
           </div>
         </div>
-        <div className="feature-three">
+        <div className="feature-three" ref={elThree}>
           <div className="feature-number">03.</div>
           <div className="feature-title">Competitive Melting Pot</div>
           <div className="feature-content">
