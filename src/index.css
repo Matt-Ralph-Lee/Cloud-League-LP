@@ -6,9 +6,46 @@ body {
   -ms-overflow-style: none; /* IE, Edge 対応 */
   scrollbar-width: none; /* Firefox 対応 */
   background: #111111;
+  cursor: none; /*もともとあるカーソルは見えなくなるようにする */
 }
 
 body::-webkit-scrollbar {
   /* Chrome, Safari 対応 */
   display: none;
+}
+
+#cursor,
+#follower {
+  border-radius: 50%;
+  position: fixed; /*bodyの一番左上になるように配置する */
+  top: 0;
+  left: 0;
+  cursor: none; /*もともとあるカーソルは見えなくなるようにする */
+  pointer-events: none; /*他の要素がクリックできなくならないように */
+}
+
+#cursor {
+  width: 8px;
+  height: 8px;
+  top: -4px;
+  left: -4px;
+  background: rgb(0, 244, 200);
+  background: linear-gradient(
+    120deg,
+    rgba(0, 244, 200, 1) 0%,
+    rgba(19, 129, 231, 1) 100%
+  );
+  z-index: 1001; /*どの要素よりも一番上になるようにする */
+}
+
+#follower {
+  width: 40px;
+  height: 40px;
+  top: -20px;
+  left: -20px;
+  transition: transform 0.4s; /*ちょっと遅れてついてくるように */
+  transition-timing-function: ease-out;
+  background-color: #505050;
+  opacity: 0.5;
+  z-index: 1000; /*カーソルの次に上になるようにする */
 }
