@@ -29,7 +29,13 @@ export const Features = () => {
     function showTwo(entries) {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          elTwo.current.style.animation = "slideInRight 0.6s ease-out forwards";
+          if (window.innerWidth > 510) {
+            elTwo.current.style.animation =
+              "slideInRight 0.6s ease-out forwards";
+          } else {
+            elTwo.current.style.animation =
+              "slideInLeft 0.6s ease-out forwards";
+          }
         }
       });
     }

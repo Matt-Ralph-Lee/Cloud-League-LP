@@ -32,7 +32,11 @@ export const Fly = () => {
     let flug =
       (((y - preY) / Math.abs(y - preY)) * (ratio - preRatio)) /
       Math.abs(ratio - preRatio);
-    setOffset(350 * (1 + Math.sqrt(1 - ratio ** 2) * flug) - 500);
+    if (window.innerWidth > 510) {
+      setOffset(350 * (1 + Math.sqrt(1 - ratio ** 2) * flug) - 500);
+    } else {
+      setOffset(60 * (1 + Math.sqrt(1 - ratio ** 2) * flug) - 500);
+    }
     preRatio = ratio;
     preY = y;
   }

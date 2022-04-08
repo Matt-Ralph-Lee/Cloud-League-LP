@@ -9,48 +9,131 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.features-title {
-  color: white;
-  letter-spacing: 0.1em;
-  padding: 1em;
-  margin: 5em;
+@media screen and (min-width: 510px) {
+  .features-title {
+    color: white;
+    letter-spacing: 0.1em;
+    padding: 1em;
+    margin: 5em;
+  }
+  .feature-one,
+  .feature-three {
+    width: 80vw;
+    margin: 5em 0;
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+  .feature-two {
+    width: 40vw;
+    margin: 5em 0;
+    margin-left: 40vw;
+    opacity: 0;
+    transform: translateX(10%);
+  }
+  .feature-number {
+    font-size: 4em;
+    letter-spacing: 0.2em;
+    color: rgb(0, 244, 200);
+    background: rgb(0, 244, 200);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 244, 200, 1) 0%,
+      rgba(19, 129, 231, 1) 100%
+    ); /* 背景色にグラデーションを指定 */
+    background-clip: text; /*テキストでくり抜く*/
+    -webkit-text-fill-color: transparent; /*くり抜いた部分は背景を表示*/
+  }
+  .feature-title {
+    color: white;
+    font-size: 2.5em;
+    letter-spacing: 0.15em;
+    margin: 0.6em 0;
+  }
+  .feature-section {
+    display: flex;
+    align-items: center;
+    margin: 2.6em 0;
+    font-size: 1.6em;
+    letter-spacing: 0.1em;
+  }
+  .feature-explanation {
+    font-size: 1.3em;
+    letter-spacing: 0.2em;
+  }
+  .coffee-house-title {
+    display: flex;
+    font-size: 1.8em;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.2em;
+    align-items: center;
+    margin: 0.8em 0;
+  }
+  .coffee-house-content {
+    font-weight: normal;
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+  }
 }
-
-.feature-number {
-  font-size: 4em;
-  letter-spacing: 0.2em;
-  color: rgb(0, 244, 200);
-  background: rgb(0, 244, 200);
-  background: linear-gradient(
-    180deg,
-    rgba(0, 244, 200, 1) 0%,
-    rgba(19, 129, 231, 1) 100%
-  ); /* 背景色にグラデーションを指定 */
-  background-clip: text; /*テキストでくり抜く*/
-  -webkit-text-fill-color: transparent; /*くり抜いた部分は背景を表示*/
-}
-
-.feature-one,
-.feature-three {
-  width: 80vw;
-  margin: 5em 0;
-  opacity: 0;
-  transform: translateX(-10%);
-}
-
-.feature-two {
-  width: 40vw;
-  margin: 5em 0;
-  margin-left: 40vw;
-  opacity: 0;
-  transform: translateX(10%);
-}
-
-.feature-title {
-  color: white;
-  font-size: 2.5em;
-  letter-spacing: 0.15em;
-  margin: 0.6em 0;
+@media screen and (max-width: 510px) {
+  .features-title {
+    color: white;
+    letter-spacing: 0.6em;
+    padding: 1em;
+    margin: 5em;
+  }
+  .feature-one,
+  .feature-two,
+  .feature-three {
+    width: 80vw;
+    margin: 5em 0;
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+  .feature-number {
+    font-size: 8em;
+    letter-spacing: 0.2em;
+    color: rgb(0, 244, 200);
+    background: rgb(0, 244, 200);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 244, 200, 1) 0%,
+      rgba(19, 129, 231, 1) 100%
+    ); /* 背景色にグラデーションを指定 */
+    background-clip: text; /*テキストでくり抜く*/
+    -webkit-text-fill-color: transparent; /*くり抜いた部分は背景を表示*/
+  }
+  .feature-title {
+    color: white;
+    font-size: 3em;
+    letter-spacing: 0.3em;
+    margin: 0.6em 0;
+  }
+  .feature-section {
+    display: flex;
+    align-items: center;
+    margin: 1.8em 0;
+    font-size: 2.9em;
+    letter-spacing: 0.1em;
+  }
+  .feature-explanation {
+    font-size: 2.7em;
+    letter-spacing: 0.2em;
+  }
+  .coffee-house-title {
+    display: flex;
+    font-size: 2.8em;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.2em;
+    align-items: center;
+    margin: 0.8em 0;
+  }
+  .coffee-house-content {
+    font-weight: normal;
+    font-size: 2.7em;
+    letter-spacing: 0.2em;
+  }
 }
 
 .feature-content {
@@ -59,37 +142,14 @@
   color: white;
 }
 
-.feature-section {
-  display: flex;
-  align-items: center;
-  margin: 2.6em 0;
-  font-size: 1.6em;
-  letter-spacing: 0.1em;
-}
-
 .cross-image {
   margin: 0.4em 0.6em 0.1em 0.6em;
   width: 0.8em;
   height: auto;
 }
 
-.feature-explanation {
-  font-size: 1.3em;
-  letter-spacing: 0.2em;
-}
-
 .coffee-house {
   margin-bottom: 3em;
-}
-
-.coffee-house-title {
-  display: flex;
-  font-size: 1.8em;
-  font-weight: bold;
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 0.2em;
-  align-items: center;
-  margin: 0.8em 0;
 }
 
 .square-bullet {
@@ -103,12 +163,6 @@
   );
   transform: rotate(-45deg);
   margin-right: 0.7em;
-}
-
-.coffee-house-content {
-  font-weight: normal;
-  font-size: 1.2em;
-  letter-spacing: 0.2em;
 }
 
 @keyframes slideInLeft {

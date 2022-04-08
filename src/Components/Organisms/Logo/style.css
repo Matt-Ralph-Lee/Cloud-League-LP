@@ -9,55 +9,8 @@
   background: #111111;
 }
 
-.logo-image {
-  width: 12em;
-  height: auto;
-  margin: 1em 0;
-}
-
-.logo {
-  color: white;
-  font-weight: bold;
-  font-family: "Montserrat", sans-serif;
-  margin-left: 1em;
-}
-
-/* .logo,
-.logo-image {
-  animation: disolve 800ms ease-in forwards;
-} */
-
 .logo > div {
   width: 100%;
-}
-
-.google {
-  font-size: 4em;
-  letter-spacing: 0.2em;
-  margin: 0.1em 0;
-}
-
-.developer {
-  font-size: 2.5em;
-  letter-spacing: 0.285em;
-  margin-left: 0.03em;
-  margin: 0.1em 0;
-}
-
-.student-clubs {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  font-size: 1.7em;
-  letter-spacing: 0.3em;
-  margin: 0.6em 0 0.5em 0;
-}
-
-.clubs {
-  margin-right: 0.35em;
-}
-.student {
-  margin-left: 0.1em;
 }
 
 .cloud {
@@ -66,36 +19,130 @@
   align-items: baseline;
 }
 
-.cl,
-.ud {
-  font-size: 4.8em;
-  letter-spacing: 0.205em;
+@media screen and (min-width: 510px) {
+  .logo-image {
+    width: 12em;
+    height: auto;
+    margin: 1em 0;
+  }
+  .google {
+    font-size: 4em;
+    letter-spacing: 0.2em;
+    margin: 0.1em 0;
+  }
+  .developer {
+    font-size: 2.5em;
+    letter-spacing: 0.285em;
+    margin: 0.1em 0;
+  }
+  .student-clubs {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 1.7em;
+    letter-spacing: 0.3em;
+    margin: 0.6em 0 0.5em 0;
+  }
+  .clubs {
+    margin-right: 0.35em;
+  }
+  .student {
+    margin-left: 0.1em;
+  }
+  .cl,
+  .ud {
+    font-size: 4.8em;
+    letter-spacing: 0.205em;
+  }
+  .logo-circle {
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+    background: rgb(0, 244, 200);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 244, 200, 1) 0%,
+      rgba(19, 129, 231, 1) 100%
+    );
+    transform: rotate(30deg);
+    margin-left: -0.35em;
+  }
+  .league {
+    font-size: 4.2em;
+    letter-spacing: 0.2em;
+    margin: 0.1em 0;
+  }
+  .logo {
+    color: white;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 1em;
+  }
 }
 
-.logo-circle {
-  width: 3.5em;
-  height: 3.5em;
-  border-radius: 50%;
-  background: rgb(0, 244, 200);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 244, 200, 1) 0%,
-    rgba(19, 129, 231, 1) 100%
-  );
-  transform: rotate(30deg);
-  margin-left: -0.35em;
+@media screen and (max-width: 510px) {
+  .logo-image {
+    width: 36em;
+    height: auto;
+    margin: 5em 0;
+  }
+  .google {
+    font-size: 8em;
+    letter-spacing: 0.4em;
+    margin: 0.1em 0;
+  }
+  .developer {
+    font-size: 5.4em;
+    letter-spacing: 0.4em;
+    margin: 0.1em 0;
+  }
+  .student-clubs {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 3.8em;
+    letter-spacing: 0.4em;
+    margin: 0.6em 0 0.5em 0;
+  }
+  .clubs {
+    margin-right: 0.5em;
+  }
+  .student {
+    margin-left: 0.1em;
+  }
+  .cl,
+  .ud {
+    font-size: 8em;
+    letter-spacing: 0.6em;
+  }
+  .ud {
+    margin-right: -0.2em;
+  }
+  .logo-circle {
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    background: rgb(0, 244, 200);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 244, 200, 1) 0%,
+      rgba(19, 129, 231, 1) 100%
+    );
+    transform: rotate(30deg);
+    margin-right: 2em;
+  }
+  .league {
+    font-size: 8em;
+    letter-spacing: 0.45em;
+    margin: 0.1em 0;
+  }
+  .logo {
+    color: white;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 3em;
+  }
 }
-
-.league {
-  font-size: 4.2em;
-  letter-spacing: 0.2em;
-  margin: 0.1em 0;
-}
-
-/* .logo-page > div,
-.logo-image {
-  animation: fadeOut 1s 1s ease-in-out forwards;
-} */
 
 @keyframes disolve {
   0% {

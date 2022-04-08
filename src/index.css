@@ -49,3 +49,10 @@ body::-webkit-scrollbar {
   opacity: 0.5;
   z-index: 1000; /*カーソルの次に上になるようにする */
 }
+
+@media screen and (max-width: 510px) {
+  #cursor,
+  #follower {
+    display: none; /*他の要素がクリックできなくならないように */
+  }
+}
