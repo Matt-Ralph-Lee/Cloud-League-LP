@@ -13,7 +13,9 @@ export const Concept = () => {
       <div className="concept-page" ref={ref}>
         {inView && (
           <>
-            <div className="concept-title">CONCEPT</div>
+            <div className="concept-title">
+              <span>CONCEPT</span>
+            </div>
             <div className="concept">
               <div className="concept-first-line">
                 <span className="concept-google">Google</span>社の支援のもとで、
