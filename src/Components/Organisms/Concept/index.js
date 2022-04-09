@@ -18,7 +18,8 @@ export const Concept = () => {
             </div>
             <div className="concept">
               <div className="concept-first-line">
-                <span className="concept-google">Google</span>社の支援のもとで、
+                <span className="concept-google">Google Developers</span>
+                の支援のもとで、
               </div>
               <div className="concept-second-line">大学の壁を超え、</div>
               <div className="concept-third-line">少数精鋭で、</div>
